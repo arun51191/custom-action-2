@@ -1,7 +1,4 @@
-FROM ubuntu
-RUN cd && \
-    ls -ltr
+FROM ubuntu:18.04
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-RUN ls -ltr
 ENTRYPOINT ["/entrypoint.sh"]
